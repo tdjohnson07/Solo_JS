@@ -37,14 +37,14 @@ for(var i=0; i<boolList.length; i++){
   }
 }
 //7) Combine all three arrays into one array, and log the newly created are in reverse.
-var allArray=[];
-for (var i=0; i<stringList.length; i++){
-  allArray.push(stringList[i]);
-}
-for (var i=0; i<numList.length; i++){
-  allArray.push(numList[i]);
-}
-for (var i=0; i<boolList.length; i++){
-  allArray.push(boolList[i]);
-}
+var allArray=stringList.concat(numList, boolList);
+// for (var i=0; i<stringList.length; i++){
+//   allArray.push(stringList[i]);
+// }
+// for (var i=0; i<numList.length; i++){
+//   allArray.push(numList[i]);
+// }
+// for (var i=0; i<boolList.length; i++){
+//   allArray.push(boolList[i]);
+// }
 console.log(allArray.reverse());
