@@ -13,7 +13,12 @@ console.log("Months listed are", stringList.join(", "));
 
 console.log(numList[numList.length-1]);
 //3) Iterate through numList, output all numbers as single String
-console.log(numList.toString());
+//console.log(numList.toString());
+var numString="";
+for(var i=0; i<numList.length; i++){
+  numString+=numList[i].toString();
+}
+console.log(numString);
 //4) Iterate through numList and add all of the elements together and console log the total
 var total=0;
 for( var i=0; i<numList.length; i++){
